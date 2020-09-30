@@ -135,5 +135,11 @@ namespace Graph_Laba3
         {
             
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Graphics g = pictureBox1.CreateGraphics();
+            g.Clear(Color.White);
+        }
     }
 }
