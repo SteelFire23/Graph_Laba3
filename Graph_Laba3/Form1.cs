@@ -71,7 +71,7 @@ namespace Graph_Laba3
             else
             {
                 string text = "";
-                int lineNumX = 250; 
+                int lineNumX = pictureBox1.Width / 4;
                 int lineNumY = 200;
                 using (StreamReader reader = new StreamReader(Global.path))
                 {
@@ -126,7 +126,7 @@ namespace Graph_Laba3
                 g.Dispose();
             }
         }
-        class Global
+        class Global//чтобы удобно можно было получить путь нужного файла 
         {
             public static string path;
         }
@@ -140,6 +140,7 @@ namespace Graph_Laba3
         {
             Graphics g = pictureBox1.CreateGraphics();
             g.Clear(Color.White);
+            g.Dispose();
         }
     }
 }
